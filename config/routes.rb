@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   devise_for :admins
-  get 'pages_controller/home'
+  get 'home', to: 'pages_controller#home'
 
-  get 'pages_controller/profile'
+  get 'profil', to:'pepages_controller'
 
-  get 'pages_controller/news'
+  get 'news', to: 'pages_controller'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
